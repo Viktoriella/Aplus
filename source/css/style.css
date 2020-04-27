@@ -93,9 +93,17 @@ body {
   	left: 380px;
   	width: 650px;
   	height: 450px;
-  	background-image: url("../img/items.png");
   	background-repeat: no-repeat;
   	z-index: -1;
+}
+
+.no-webp .promo::after,
+.no-js .promo::after {
+    background-image: url("../img/items.png");
+}
+
+.webp .promo::after {
+    background-image: url("../img/items.webp");
 }
 
 .promo-title {
@@ -187,8 +195,16 @@ body {
   left: 115px;
   width: 75px;
   height: 70px;
-  background-image: url("../img/sprite1.png");
   background-repeat: no-repeat;
+}
+
+.no-webp .features-icon,
+.no-js .features-icon {
+   background-image: url("../img/sprite1.png");
+}
+
+.webp .features-icon {
+    background-image: url("../img/sprite1.webp");
 }
 
 .features-icon-schedule {

@@ -2,11 +2,14 @@
 <html lang="ru">
 
   <head>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="img/items.webp" as="image">
     <meta charset="utf-8">
     <meta name="description" content="А Плюс - компания по обучению веб-разработке с нуля до профи">
     <meta name="keywords" content="А Плюс, обучение веб-разработке, уроки по веб-разработке, веб-разработка с нуля">
     <title>A+</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/modernizr-custom.min.js"></script>
   </head>
 
   <body>
@@ -16,7 +19,10 @@
         
         <div class="header-top">
           <div class="logo">
-            <img src="img/logotype.png" alt="A+">
+            <picture>
+              <source srcset="img/logotype.webp" type="image/webp">
+              <img src="img/logotype.png" alt="A+">
+            </picture>
           </div>
           <nav class="main-menu">
             <ul>
@@ -143,7 +149,10 @@
         
         <div class="footer-address">
           <div class="logo">
-              <img src="img/logotype.png" width="182" height="82" alt="A+">
+              <picture>
+                <source srcset="img/logotype.webp" type="image/webp">
+                <img src="img/logotype.png" width="182" height="82" alt="A+">
+              </picture>
           </div>
           <p>197101, г. Санкт-Петербург,<br> пр. Кронверкский, д. 49</p>
         </div>
